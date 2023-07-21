@@ -1,0 +1,19 @@
+name: Update NPM packages
+
+on:
+  # Automatically run once a week.
+  schedule:
+    - cron: "0 0 1 * SAT"
+
+jobs:
+  update-packages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update packages
+        uses: msudgh/actions-npm-check-updates@v0.1.2
+        with:
+          node-version: 20.5.0
+          npm-version: 9.8.0
+          base-branch: master
+          pr-body: |
+            Automated NPM package update
