@@ -25,18 +25,18 @@
     "config.js"
   ],
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "conventional-changelog-cli": "^2.0.23",
-    "mocha": "7.2.0",
-    "sinon": "^9.0.2",
-    "sinon-chai": "^3.5.0",
+    "chai": "^4.3.7",
+    "conventional-changelog-cli": "^3.0.0",
+    "mocha": "^10.2.0",
+    "sinon": "^15.2.0",
+    "sinon-chai": "^3.7.0",
     "tmp": "^0.2.1"
   },
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">= 16.0.0"
   },
   "scripts": {
     "test": "mocha -r mocha.conf.js test/{unit,integration}/*.spec.js",
